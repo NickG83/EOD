@@ -2,7 +2,7 @@ name: Fetch File From URL
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '15 8 * * 1-5'  # Runs on weekdays at 0815 UTC
   workflow_dispatch:      # Allows manual trigger
 
 jobs:
