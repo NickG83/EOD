@@ -24,4 +24,4 @@ jobs:
         git config user.email "actions@github.com"
         git add data/asx_yfinance_eod.csv
         git commit -m "Auto-update file from URL" || echo "No changes to commit"
-        git push
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
